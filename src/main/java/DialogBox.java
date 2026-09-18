@@ -50,7 +50,9 @@ public class DialogBox extends HBox {
 
         Collections.reverse(tmp);
         getChildren().setAll(tmp);
+
         setAlignment(Pos.TOP_LEFT);
+        dialog.getStyleClass().add("reply-label");
     }
 
     public static DialogBox getUserDialog(String text, Image img) {

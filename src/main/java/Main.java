@@ -24,6 +24,10 @@ public class Main extends Application {
 
             stage.setScene(scene);
 
+            stage.setTitle("Duke");
+            stage.setMinHeight(220);
+            stage.setMinWidth(417);
+
             fxmlLoader.<MainWindow>getController().setDuke(duke);
 
             stage.show();
